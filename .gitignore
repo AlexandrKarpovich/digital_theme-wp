@@ -1,0 +1,9 @@
+.idea
+yarn.lock
+phpcs.xml.dist
+package-lock.json
+composer.lock
+
+# ignore node dependency directories
+node_modules/
+vendor/
