@@ -22,9 +22,11 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<!--wrapper-->
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'digital' ); ?></a>
-
+<!--    header-->
 	<header id="masthead" class="site-header  header">
         <div class="container">
             <div class="site-branding">
@@ -50,12 +52,12 @@
                 <?php
                 wp_nav_menu(
                     array(
-                        'theme_location' => 'menu-1',
+                        'theme_location' => 'header menu',
                         'menu_id'        => 'primary-menu',
                     )
                 );
                 ?>
             </nav>
         </div>
-
 	</header>
+<!--    header end -->
