@@ -1,0 +1,24 @@
+section.block__img-text {
+    &:nth-child(odd) {
+        .block__img-text__inner {
+            flex-direction: row-reverse;
+
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 55px;
+            color: #000000;
+        }
+        .descr {
+
+        }
+    }
+
+}

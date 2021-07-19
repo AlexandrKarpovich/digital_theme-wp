@@ -142,14 +142,20 @@ add_action( 'widgets_init', 'digital_widgets_init' );
 function digital_scripts() {
 	wp_enqueue_style( 'digital-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'digital-style', 'rtl', 'replace' );
+    wp_enqueue_script( 'digital-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
-	wp_enqueue_script( 'digital-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+    //  dist  css
+    wp_enqueue_style( 'digital-home-style', get_template_directory_uri() . '/dist/styles/styles.0245fafa4e08427e8f72.min.css', [], _S_VERSION );
+    //  dist  js
+    wp_enqueue_script( 'digital-js', get_template_directory_uri() . '/dist/scripts/vendor.0245fafa4e08427e8f72.min.js', [], _S_VERSION, true );
+    wp_enqueue_script( 'digital-js', get_template_directory_uri() . '/dist/scripts/app.0245fafa4e08427e8f72.min.js', [], _S_VERSION, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'digital_scripts' );
+add_action( 'wp_enqueue_scripts', 'digital_scripts','digital-home-style', 'digital-js' );
 
 /**
  * Implement the Custom Header feature.

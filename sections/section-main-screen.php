@@ -16,7 +16,10 @@ if (!defined('ABSPATH')) {
 <section class="main-screen">
     <div class="container">
         <div class="main-screen__inner">
-            <div class="text-block"><h1 class="title"><?php echo $args['tittle']; ?></h1>
+            <div class="text-block">
+                <h1 class="title"><?php echo $args['tittle']; ?>
+                <p id="demo"></p>
+                </h1>
                 <div class="subtitle"><?php echo $args['subtitle']; ?></div>
                 <div class="btn"><a href="<?php var_dump($args['button']); ?>"></a></div>
             </div>

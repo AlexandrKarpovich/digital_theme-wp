@@ -2,129 +2,15 @@ html(lang="en")
     head
         include includes/setup/head
     body
-        header.header
-            .container
-                .header__inner
-                    ul.list
-                        li.list__item.logo
-                            a(href='/')
-                                img(src="../assets/img/logo.png")
-                                | Digital
-                        li.list__item
-                            a(href="/") Кто мы?
-                        li.list__item
-                            a(href="/") Чем можем помочь?
-                    ul.list
-                        li.list__item
-                            a(href="/") Кейсы
-                        li.list__item
-                            a(href="/") Блог
-                        li.btn
-                            a.btn__link(href="/") Связаться с нами
-        section.main-screen
-            .container
-                .main-screen__inner
-                    .text-block
-                        h1.title Продвигайте свой бренд в Google
-                        .subtitle Запускать рекламу в интернете с нами проще и удобнее. Делигируйте SEO, контекстную и медийную рекламу профессионалам своего дела и сфокусируйтесь на более важных задачах вашего бизнеса.
-                        .btn
-                            a.btn__link(href="/") Связаться с нами
+        include includes/header
+        include includes/main_screen
+        include includes/block__img-text
 
-                    .image-block
-                        .image-block__bg
+        include includes/text-block
 
-                    .main-screen-scroll-svg
-                        svg.animate__animated.animate__bounce(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24')
-                            title Далее
-                            polyline(fill='none' stroke='#3A4A59' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' points='.222 4.222 15.778 4.222 15.778 19.778' transform='rotate(45 8 12)')
-        section.main-screen-2
-            .container
-                .main-screen-2__inner
-                    .text-block
-                        h4.title Отдайте performance маркетинг на аутсорс.
-                        .subtitle Экономьте время на рутине, занимайтесь стратегически важными делами, а маркетинг мы сделаем за вас.
-                        .btn
-                            a.btn__link(href="/") Поболтаем?
-                        .bg-yellow
+        include includes/two-blocks
 
-        section.block__img-text.marketing
-            .container
-                .block__img-text__inner
-                    .text-block
-                        h3.title Интернет-маркетинг
-                        .descr Контекстная реклама, SMM, лидогенерация, баннерная и видео реклама - то, что поможет вашему бизнесу в сети. Мы работаем, чтобы сделать ваш Digital эффективнее.
-                        .btn-2
-                            a.btn-2__link(href="#") Поболтаем?
-                            .btn-2__arrow
-                                 svg(width='21' height='11' viewbox='0 0 21 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                        path(d='M1 5.38462H20M20 5.38462L15.25 1M20 5.38462L15.25 10' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
-                    .img-block
-                        img(src="./assets/img/marketing-img.png" alt="")
-
-        section.block__img-text.marketing
-            .container
-                .block__img-text__inner
-                    .box.text-block.left
-                        h3.title Интернет-маркетинг
-                        .descr Контекстная реклама, SMM, лидогенерация, баннерная и видео реклама - то, что поможет вашему бизнесу в сети. Мы работаем, чтобы сделать ваш Digital эффективнее.
-                        .btn-2
-                            a.btn-2__link(href="/") Поболтаем?
-                            .btn-2__arrow
-                                svg(width='21' height='11' viewbox='0 0 21 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                    path(d='M1 5.38462H20M20 5.38462L15.25 1M20 5.38462L15.25 10' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
-                    .box.img-block
-                        img(src="./assets/img/programmatic-img.png" alt="")
-
-        section.block__img-text.marketing
-            .container
-                .block__img-text__inner
-                    .box.text-block
-                        h3.title Интернет-маркетинг
-                        .descr Контекстная реклама, SMM, лидогенерация, баннерная и видео реклама - то, что поможет вашему бизнесу в сети. Мы работаем, чтобы сделать ваш Digital эффективнее.
-                        .btn-2
-                            a.btn-2__link(href="/") Поболтаем?
-                            .btn-2__arrow
-                                svg(width='21' height='11' viewbox='0 0 21 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                    path(d='M1 5.38462H20M20 5.38462L15.25 1M20 5.38462L15.25 10' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
-                    .box.img-block
-                        img(src="./assets/img/mac-seo.png" alt="")
-
-        section.text-block
-            .container
-                .text-block__inner
-                    h2  Откройте для себя возможности Digital маркетинга
-
-        section.two-blocks
-            .container
-                .two-blocks__inner
-                    .box.text-block
-                        h4.title Хотите современный дизайн? - не проблема!
-                        .btn-2
-                            a.btn-2__link(href="/") Узнать больше
-                            .btn-2__arrow
-                                svg(width='21' height='11' viewbox='0 0 21 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                    path(d='M1 5.38462H20M20 5.38462L15.25 1M20 5.38462L15.25 10' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
-                    .box.text-block
-                        h4.title Внедрите сквозную аналитику. Сделайте ваш маркетинг эффективнее
-                        .btn-2
-                            a.btn-2__link(href="/") Узнать больше
-                            .btn-2__arrow
-                                svg(width='21' height='11' viewbox='0 0 21 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                    path(d='M1 5.38462H20M20 5.38462L15.25 1M20 5.38462L15.25 10' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
-        section.text-block
-            .container
-                .text-block__inner
-                    h2  Начните продвигать свой Бренд уже сейчас
-                    .btn.yellow
-                        a.btn__link(href="/") Связаться с нами
-
-        footer.footer
-            .container
-                .footer__inner
-
-
-
-
+       include includes/footer
 
 
 

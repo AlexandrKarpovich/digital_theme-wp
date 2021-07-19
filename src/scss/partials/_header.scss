@@ -1,0 +1,39 @@
+//header
+.header {
+    width: 100%;
+    padding: 19px 0 10px;
+    position: fixed;
+    background: #fff;
+    z-index: 15;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .list {
+        display: flex;
+        align-items: center;
+        &__item {
+            padding-right: 39px;
+            a {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 32px;
+                color: #000000;
+            }
+        }
+    }
+    .logo {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        a {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
