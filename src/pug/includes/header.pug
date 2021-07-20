@@ -1,21 +1,20 @@
-header.header
-    .container
-        .header__inner
-            ul.list
-                li.list__item.logo
-                    a(href='/')
-                        img(src="../assets/img/logo.png")
-                        | Digital
-                li.list__item
-                    a(href="/") Кто мы?
-                li.list__item
-                    a(href="/") Чем можем помочь?
-            ul.list
-                li.list__item
-                    a(href="/") Кейсы
-                li.list__item
-                    a(href="/") Блог
-                li.btn
-                    a.btn__link(href="/") Связаться с нами
+header.header.mobile
+    .container.header__inner
+        .logo
+            a(href='/')
+                img(src="../assets/img/logo.png")
+                | Digital
+        ul.menu#menu
+            li.menu__item
+                a(href="/") Кто мы?
+            li.menu__item
+                a(href="/") Чем можем помочь?
+            li.menu__item
+                a(href="/") Кейсы
+            li.menu__item
+                a(href="/") Блог
+            li.btn
+                a.btn__link(href="/") Связаться с нами
+
 
 

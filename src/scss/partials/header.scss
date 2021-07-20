@@ -1,20 +1,26 @@
 //header
 .header {
     width: 100%;
-    padding: 19px 0 10px;
+    padding: 8px 0;
     position: fixed;
     background: #fff;
+    box-sizing: border-box;
     z-index: 15;
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .list {
+    .menu {
+        width: 100%;
         display: flex;
         align-items: center;
         &__item {
             padding-right: 39px;
+            flex-grow: 1;
+            &:nth-child(2) {
+                flex-grow: 30;
+            }
             a {
                 font-weight: 300;
                 font-size: 18px;
@@ -24,13 +30,13 @@
         }
     }
     .logo {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 32px;
-        color: #000000;
         a {
             display: flex;
             align-items: center;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: #000000;
             img {
                 margin-right: 10px;
             }
