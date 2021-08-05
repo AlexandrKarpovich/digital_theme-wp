@@ -9,21 +9,20 @@ if (!defined('ABSPATH')) {
  */
 
 
-
-
 ?>
 
 <section class="main-screen">
     <div class="container">
-        <div class="main-screen__inner">
-            <div class="text-block">
-                <h1 class="title"><?php echo $args['tittle']; ?>
-                <p id="demo"></p>
+        <div class="main-screen__inner <?= $args["block"]['class']; ?>">
+            <div class="box text-block">
+                <h1 class="title"><?= $args["block"]['title']; ?>
+                    <div id="typed-strings"><span>Google</span><span>Yandex</span><span>Facebook</span></div>
+                    <div class="text-typing"><span id="typed"></span></div>
                 </h1>
-                <div class="subtitle"><?php echo $args['subtitle']; ?></div>
-                <div class="btn"><a href="<?php var_dump($args['button']); ?>"></a></div>
+                <div class="subtitle"><?= $args["block"]['subtitle']; ?></div>
+                <div class="btn"><a class="btn__link" href="<?= $args["block"]['button']['url']; ?>"><?= $args["block"]['button']['title']; ?></a></div>
             </div>
-            <div class="image-block">
+            <div class="box image-block">
                 <div class="image-block__bg"></div>
             </div>
             <div class="main-screen-scroll-svg">
@@ -35,8 +34,16 @@ if (!defined('ABSPATH')) {
                 </svg>
             </div>
         </div>
+
+        <div class="main-screen__inner screen-2">
+            <div class="text-block">
+                <h4 class="title"><?= $args["block_2"]['title']; ?></h4>
+                <div class="subtitle"><?= $args["block_2"]['subtitle']; ?></div>
+                <div class="btn"><a class="btn__link" href="<?= $args["block_2"]['button']['url']; ?>"><?= $args["block_2"]['button']['title']; ?></a></div>
+                <div class="bg-yellow"></div>
+            </div>
+        </div>
     </div>
 </section>
-
 
 
