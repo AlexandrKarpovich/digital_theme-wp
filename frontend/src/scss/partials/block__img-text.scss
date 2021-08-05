@@ -1,0 +1,45 @@
+.img-text {
+    padding: 44px 0 218px;
+
+    //&__inner {
+    //
+    //}
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .box {
+            &.text-box {
+                max-width: 708px;
+                width: 55%;
+
+                .title {
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 55px;
+                    color: #000000;
+                }
+                .descr {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #000000;
+                }
+            }
+            &.img-box {
+                //max-width: 580px;
+                width: 40%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

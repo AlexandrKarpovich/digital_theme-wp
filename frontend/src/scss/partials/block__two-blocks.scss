@@ -1,0 +1,49 @@
+.two-blocks {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .box {
+            width: 48%;
+            height: 380px;
+            background: #FFFFFF;
+            box-shadow: 3px 3px 22px rgba(0, 0, 0, 0.15);
+            border-radius: 3px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            box-sizing: border-box;
+            padding: 20px 35px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                width: 49%;
+                height: 390px;
+            }
+
+            .img-box {
+                width: 100%;
+                margin: auto;
+            }
+
+            .title {
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 40px;
+                color: #000000;
+                margin: 0;
+            }
+
+            .btn-2 {
+                //margin: 18px 0 26px 39px;
+
+                &__arrow {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
